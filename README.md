@@ -35,35 +35,25 @@
 
 ## 🖼️ Screenshots
 
+<p align="center">
+  <img src="assets/screens/ss9.jpg" alt="Home Screen" width="250"/>
+  <img src="assets/screens/ss3.jpg" alt="Login Screen" width="250"/>
+  <img src="assets/screens/ss6.jpg" alt="Login Screen" width="250"/>
+  <img src="assets/screens/ss2.jpg" alt="Login Screen" width="250"/>
+  <img src="assets/screens/ss1.jpg" alt="Login Screen" width="250"/>
+  <img src="assets/screens/ss4.jpg" alt="Login Screen" width="250"/>
+  <img src="assets/screens/ss5.jpg" alt="Login Screen" width="250"/>
+  <img src="assets/screens/ss7.jpg" alt="Login Screen" width="250"/>
+  <img src="assets/screens/ss8.jpg" alt="Login Screen" width="250"/>
+  <!-- Add more screenshots as needed -->
+</p>
+
 <!--
 Add screenshots below to showcase the app:
 
 ![Dashboard](screenshots/dashboard.png)
 ![Subject Management](screenshots/subject_management.png)
 -->
-
----
-
-## 🛠️ Getting Started
-
-### Prerequisites
-- **Android Studio** (latest recommended)
-- **Android SDK** (API Level 21+)
-- **Java 17+**
-
-### Installation
-
-1. **Clone the repository:**
-   ```sh
-   git clone <your-repo-url>
-   cd StudySmart
-   ```
-2. **Open in Android Studio:**
-   - Select `Open an existing project` and choose the `StudySmart` directory.
-3. **Build the project:**
-   - Let Gradle sync and download dependencies.
-4. **Run the app:**
-   - Connect your device or start an emulator, then click 'Run'.
 
 ---
 
@@ -93,18 +83,7 @@ app/
 - **Android Architecture Components** (ViewModel, StateFlow)
 - **Gradle** (Build System)
 
----
-
-## 🤝 Contributing
-
-Contributions, suggestions, and stars are always welcome! If you spot a bug or have an idea for improvement, feel free to [open an issue](../../issues) or submit a pull request.
 
 ---
 
-## 📄 License
-
-*No explicit license file found. Please add a LICENSE file if you intend to open source this project.*
-
----
-
-> _Made with ❤️ for learners and achievers._ 
+> _Made with ❤️ for learners and achievers. Contact me- [shivnanip815@gmail.com]_
