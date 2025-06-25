@@ -36,7 +36,8 @@
 ## 🖼️ Screenshots
 
 <p align="center">
-  <img src="assets/screens/ss9.jpg" alt="Home Screen" width="250"/>
+  <img src="assets/screens/ss10.jpg" alt="Home Screen" width="250"/>
+  <img src="assets/screens/ss11.jpg" alt="Home Screen" width="250"/>
   <img src="assets/screens/ss3.jpg" alt="Login Screen" width="250"/>
   <img src="assets/screens/ss6.jpg" alt="Login Screen" width="250"/>
   <img src="assets/screens/ss2.jpg" alt="Login Screen" width="250"/>
