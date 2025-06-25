@@ -1,4 +1,4 @@
-# 📚 StudySmart
+# 📚 FocusFlow
 
 [![Android](https://img.shields.io/badge/platform-Android-green?logo=android)](https://developer.android.com/) [![Kotlin](https://img.shields.io/badge/language-Kotlin-blueviolet?logo=kotlin)](https://kotlinlang.org/) [![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack%20Compose-ff69b4?logo=jetpack-compose)](https://developer.android.com/jetpack/compose)
 
@@ -8,7 +8,7 @@
 
 ## ✨ Overview
 
-**StudySmart** is your all-in-one study companion for Android. Effortlessly manage your subjects, track study sessions, and stay on top of your academic goals with a beautiful, intuitive interface. Whether you're a student, exam aspirant, or lifelong learner, StudySmart helps you study smarter, not harder.
+**FocusFlow** is your all-in-one study companion for Android. Effortlessly manage your subjects, track study sessions, and stay on top of your academic goals with a beautiful, intuitive interface. Whether you're a student, exam aspirant, or lifelong learner, StudySmart helps you study smarter, not harder.
 
 ---
 
