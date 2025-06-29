@@ -11,6 +11,14 @@
 
 ---
 
+## 🎥 Demo 
+
+[![App Demo Preview](https://img.youtube.com/vi/-Cvvxf7GKgE/0.jpg)](https://youtu.be/-Cvvxf7GKgE)
+
+_Click the image above to watch the 2-minute demo_
+
+---
+
 ## ✨ Overview
 
 **FocusFlow** is your all-in-one study companion for Android. Effortlessly manage your subjects, track study sessions, and stay on top of your academic goals with a beautiful, intuitive interface. Whether you're a student, exam aspirant, or lifelong learner, StudySmart helps you study smarter, not harder.
