@@ -13,7 +13,7 @@
 
 ## 🎥 Demo 
 
-[![App Demo Preview](https://img.youtube.com/vi/-Cvvxf7GKgE/0.jpg)](https://youtu.be/-Cvvxf7GKgE)
+[![Demo](https://img.youtube.com/vi/-Cvvxf7GKgE/mqdefault.jpg)](https://youtu.be/-Cvvxf7GKgE)
 
 _Click the image above to watch the 2-minute demo_
 
