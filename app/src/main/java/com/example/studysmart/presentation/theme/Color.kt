@@ -71,6 +71,6 @@ val Orange = Color(0xFFFF9800)
 
 val gradient1 = listOf(Color(0xFFad5389), Color(0xFF3c1053))
 val gradient2 = listOf(Color(0xFF3A6073), Color(0xFF16222A))
-val gradient3 = listOf(Color(0xFFF857A6), Color(0xFFFF5858))
-val gradient4 = listOf(Color(0xFF00d2ff), Color(0xFF3a7bd5))
+val gradient3 = listOf(Color(0xFFdfbbde), Color(0xFF583e5a))
+val gradient4 = listOf(Color(0xFFffb4ab), Color(0xFF93000a))
 val gradient5 = listOf(Color(0xFF99f2c8), Color(0xFF1f4037))
