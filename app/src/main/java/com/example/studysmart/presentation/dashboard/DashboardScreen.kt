@@ -46,6 +46,7 @@ import com.example.studysmart.R
 import com.example.studysmart.domain.model.Session
 import com.example.studysmart.domain.model.Subject
 import com.example.studysmart.domain.model.Task
+import com.example.studysmart.domain.model.Note
 import com.example.studysmart.presentation.components.AddSubjectDialog
 import com.example.studysmart.presentation.components.CountCard
 import com.example.studysmart.presentation.components.DeleteDialog
@@ -63,6 +64,8 @@ import com.ramcosta.composedestinations.annotation.RootNavGraph
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.collectLatest
+import com.example.studysmart.presentation.components.NoteItem
+import com.example.studysmart.presentation.destinations.NoteScreenDestination
 
 @RootNavGraph(start = true)
 @Destination
@@ -94,6 +97,12 @@ fun DashboardScreenRoute(
         },
         onStartSessionButtonClick = {
             navigator.navigate(SessionScreenRouteDestination())
+        },
+        onAddNoteClicked = { navigator.navigate(NoteScreenDestination()) },
+        onNoteCardClick = { noteId ->
+            noteId?.let {
+                navigator.navigate("add_edit_note_screen?noteId=$noteId&noteColor=0")
+            }
         }
     )
 }
@@ -108,7 +117,9 @@ private fun DashboardScreen(
     snackbarEvent: SharedFlow<SnackbarEvent>,
     onSubjectCardClick: (Int?) -> Unit,
     onTaskCardClick: (Int?) -> Unit,
-    onStartSessionButtonClick: () -> Unit
+    onStartSessionButtonClick: () -> Unit,
+    onAddNoteClicked: () -> Unit,
+    onNoteCardClick: (Int?) -> Unit
 ) {
 
     var isAddSubjectDialogOpen by rememberSaveable { mutableStateOf(false) }
@@ -194,6 +205,14 @@ private fun DashboardScreen(
                 ) {
                     Text(text = "Start Study Session")
                 }
+            }
+            item {
+                NotesSection(
+                    modifier = Modifier.fillMaxWidth(),
+                    onAddIconClicked = onAddNoteClicked,
+                    onNoteCardClick = onNoteCardClick,
+                    noteList = state.notes
+                )
             }
             tasksList(
                 sectionTitle = "UPCOMING TASKS",
@@ -313,6 +332,65 @@ private fun SubjectCardsSection(
                     gradientColors = subject.colors.map { Color(it) },
                     onClick = { onSubjectCardClick(subject.subjectId) }
                 )
+            }
+        }
+    }
+}
+
+@Composable
+private fun NotesSection(
+    modifier: Modifier,
+    onAddIconClicked: () -> Unit,
+    onNoteCardClick: (Int?) -> Unit,
+    noteList: List<Note>
+) {
+    Column(modifier = modifier) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Text(
+                text = "NOTES",
+                style = MaterialTheme.typography.bodySmall,
+                modifier = Modifier.padding(start = 12.dp)
+            )
+            IconButton(onClick = onAddIconClicked) {
+                Icon(
+                    imageVector = Icons.Default.Add,
+                    contentDescription = "Add Note"
+                )
+            }
+        }
+        if (noteList.isEmpty()) {
+            Image(
+                modifier = Modifier
+                    .size(120.dp)
+                    .align(Alignment.CenterHorizontally),
+                painter = painterResource(R.drawable.img_books),
+                contentDescription = "No notes available"
+            )
+            Text(
+                modifier = Modifier.fillMaxWidth(),
+                text = "You don't have any notes.\nClick the + button to add new note.",
+                style = MaterialTheme.typography.bodySmall,
+                color = Color.Gray,
+                textAlign = TextAlign.Center
+            )
+        } else {
+            LazyRow(
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                contentPadding = PaddingValues(start = 12.dp, end = 12.dp)
+            ) {
+                items(noteList) { note ->
+                    NoteItem(
+                        note = note,
+                        modifier = Modifier
+                            .width(200.dp)
+                            .height(150.dp),
+                        onDeleteClick = { /* already implemented */ }
+                    )
+                }
             }
         }
     }
