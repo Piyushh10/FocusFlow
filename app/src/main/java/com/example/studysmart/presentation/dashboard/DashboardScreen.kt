@@ -362,22 +362,23 @@ private fun NotesSection(
                 )
             }
         }
-        if (noteList.isEmpty()) {
-            Image(
-                modifier = Modifier
-                    .size(120.dp)
-                    .align(Alignment.CenterHorizontally),
-                painter = painterResource(R.drawable.img_books),
-                contentDescription = "No notes available"
-            )
-            Text(
-                modifier = Modifier.fillMaxWidth(),
-                text = "You don't have any notes.\nClick the + button to add new note.",
-                style = MaterialTheme.typography.bodySmall,
-                color = Color.Gray,
-                textAlign = TextAlign.Center
-            )
-        } else {
+//        if (noteList.isEmpty()) {
+//            Image(
+//                modifier = Modifier
+//                    .size(120.dp)
+//                    .align(Alignment.CenterHorizontally),
+//                painter = painterResource(R.drawable.img_books),
+//                contentDescription = "No notes available"
+//            )
+//            Text(
+//                modifier = Modifier.fillMaxWidth(),
+//                text = "You don't have any notes.\nClick the + button to add new note.",
+//                style = MaterialTheme.typography.bodySmall,
+//                color = Color.Gray,
+//                textAlign = TextAlign.Center
+//            )
+//        }
+//        else {
             LazyRow(
                 horizontalArrangement = Arrangement.spacedBy(12.dp),
                 contentPadding = PaddingValues(start = 12.dp, end = 12.dp)
@@ -392,6 +393,6 @@ private fun NotesSection(
                     )
                 }
             }
-        }
+//        }
     }
 }
